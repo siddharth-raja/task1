@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task2/Screens/home.dart';
+import 'package:rental/Screens/home.dart';
 
 void main() {
   runApp(const MyApp());

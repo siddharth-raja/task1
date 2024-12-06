@@ -1,9 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:task2/Data/data.dart';
-import 'package:task2/Themes/theme.dart';
-import 'package:task2/Widgets/hotels.dart';
-import 'package:task2/Widgets/location.dart';
+import 'package:rental/Data/data.dart';
+import 'package:rental/Themes/theme.dart';
+import 'package:rental/Widgets/hotels.dart';
+import 'package:rental/Widgets/location.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
