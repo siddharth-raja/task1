@@ -17,7 +17,7 @@ class Location extends StatelessWidget {
       children: [
         SizedBox(
           height: height*0.20,
-          width: width*0.27,
+          width: width*0.34,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(12),
             child: CachedNetworkImage(
@@ -27,7 +27,7 @@ class Location extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 5,
+          bottom: 10,
           child: Text(locations[index]['name'], style: TextStyle(color: Customtheme.white, fontSize: 13, fontWeight: FontWeight.w600))
         )
       ],

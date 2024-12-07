@@ -87,7 +87,7 @@ class Home extends StatelessWidget {
                                 return Location(index: index);
                               },
                               separatorBuilder: (context, index) {
-                                return const SizedBox(width: 8,);
+                                return const SizedBox(width: 10,);
                               },
                             ),
                           )
