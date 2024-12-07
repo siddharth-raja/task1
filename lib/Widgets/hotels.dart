@@ -7,7 +7,9 @@ class Hotels extends StatelessWidget {
   final int index;
   final double widheight;
   final double widwidth;
-  const Hotels({super.key, required this.index, required this.widheight, required this.widwidth});
+  final double radius;
+  final double iconsize;
+  const Hotels({super.key, required this.index, required this.widheight, required this.widwidth, required this.radius, required this.iconsize});
 
   static List hotels = Data.hotels;
   @override
@@ -32,13 +34,13 @@ class Hotels extends StatelessWidget {
               top: 10,
               right: 10,
               child: Container(
-                height: 30,
-                width: 30,
+                height: radius,
+                width: radius,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: Customtheme.white
                 ),
-                child: Icon(Icons.favorite_rounded, size: 18, color: Customtheme.lightgrey,),
+                child: Icon(Icons.favorite_rounded, size: iconsize, color: Customtheme.lightgrey,),
               ),
             )
           ],
@@ -51,7 +53,7 @@ class Hotels extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Text("\$${hotels[index]['amount']} ", style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800),),
+                  Text("\$${hotels[index]['amount']} ", style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800),),
                   Row(
                     children: [
                       Text("/ ${hotels[index]['shift']}", style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w800),),
@@ -65,7 +67,7 @@ class Hotels extends StatelessWidget {
                 ],
               ),
               Text(hotels[index]['hotelname'], style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w800),),
-              Text(hotels[index]['roomtype'], style: TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: Customtheme.grey),)
+              Text(hotels[index]['roomtype'], style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: Customtheme.grey),)
             ],
           ),
         )

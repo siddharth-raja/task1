@@ -1,7 +1,7 @@
 class Data {
   static List locations = [
     {
-      "imgpath" : "https://www.researchgate.net/profile/Nayeem-Asif/publication/330778410/figure/fig2/AS:721412788609027@1549009620647/The-figure-show-Islamic-garden-at-Taj-Mahal-India-produce-peaceful-ambient-and-a-place.jpg",
+      "imgpath" : "https://img.freepik.com/free-photo/beautiful-vertical-shot-taj-mahal-building-agra-india-clear-sky_181624-21517.jpg",
       "name":"India"
     },
     {

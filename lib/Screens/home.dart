@@ -102,7 +102,7 @@ class Home extends StatelessWidget {
                           scrollDirection: Axis.horizontal,
                           itemCount: hotels.length,
                           itemBuilder: (context, index) {
-                            return Hotels(index: index, widheight: height*0.20, widwidth: width * 0.55,);
+                            return Hotels(index: index, widheight: height*0.20, widwidth: width * 0.55, radius: 40, iconsize: 25,);
                           },
                           separatorBuilder: (context, index) {
                             return const SizedBox(width: 20,);
@@ -165,7 +165,7 @@ class Home extends StatelessWidget {
                       for(int index = 0; index < hotels.length; index++)
                         Column(
                           children: [
-                            Hotels(index: index, widheight: height*0.20, widwidth: width,),
+                            Hotels(index: index, widheight: height*0.25, widwidth: width, radius: 50, iconsize: 30,),
                             const SizedBox(height: 20,)
                           ],
                         )
